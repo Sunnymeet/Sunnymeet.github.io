@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="vue项目创建时出现的问题, HTML,CSS,JavaScript,Java,JQuery,React,Vue.js等">
+    <meta name="keywords" content="vuex面试题, HTML,CSS,JavaScript,Java,JQuery,React,Vue.js等">
     <meta name="description" content="专注Java,分享生活,分享知识,热爱开源">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>vue项目创建时出现的问题 | 遇见晴天</title>
+    <title>vuex面试题 | 遇见晴天</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -320,12 +320,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">vue项目创建时出现的问题</h1>
+                    <h1 class="description center-align post-title">vuex面试题</h1>
                 </div>
             </div>
         </div>
@@ -445,8 +445,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Vue/">
-                                <span class="chip bg-color">Vue</span>
+                            <a href="/tags/vuex/">
+                                <span class="chip bg-color">vuex</span>
                             </a>
                         
                     </div>
@@ -475,7 +475,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    110
+                    516
                 </div>
                 
 
@@ -502,19 +502,20 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="创建Vue项目时出现的错误"><a href="#创建Vue项目时出现的错误" class="headerlink" title="创建Vue项目时出现的错误"></a>创建Vue项目时出现的错误</h1><hr>
-<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/gdzD58"><img src="https://z3.ax1x.com/2021/05/12/gdzD58.md.png"></a></p>
-<blockquote>
-<p>在脚手架创建好vue项目时，在编辑器终端执行 npm run serve 有时会出现上述错误</p>
-<p>当vue渲染html为原生标签时出这个错误，初始化并重新安装 eslint</p>
-</blockquote>
-<blockquote>
-<p>npm init -y<br>npm install eslint –save-dev</p>
-</blockquote>
-<blockquote>
-<p>如果执行上面命令，启动程序依然报错，在当前项目中找到 eslintrc.js 文件 ，将 extends下的 “@vue/standard”注释掉</p>
-</blockquote>
-<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/gdxg76"><img src="https://z3.ax1x.com/2021/05/12/gdxg76.md.png"></a></p>
+                <h3 id="1、vuex有哪几种属性？"><a href="#1、vuex有哪几种属性？" class="headerlink" title="1、vuex有哪几种属性？"></a>1、vuex有哪几种属性？</h3><p>有 5 种，分别是<code>state</code>、<code>getter</code>、<code>mutation</code>、<code>action</code>、<code>module</code><br><code>state</code> =&gt; 基本数据<br><code>getters</code> =&gt; 从基本数据派生的数据<br><code>mutations</code> =&gt; 提交更改数据的方法，同步！<br><code>action</code>s =&gt; 像一个装饰器，包裹mutations，使之可以异步。<br><code>modules</code> =&gt; 模块化Vuex</p>
+<h3 id="2、vuex-的-store-特性是什么？"><a href="#2、vuex-的-store-特性是什么？" class="headerlink" title="2、vuex 的 store 特性是什么？"></a>2、vuex 的 store 特性是什么？</h3><p>(1) vuex 就是一个仓库，仓库里放了很多对象。其中 state 就是数据源存放地，对应于一般 vue 对象里面的 data</p>
+<p>(2) state 里面存放的数据是响应式的，vue 组件从 <code>store</code> 读取数据，若是 store 中的数据发生改变，依赖这相数据的组件也会发生更新</p>
+<p>(3) 它通过<code> mapState</code> 把全局的<code> state</code> 和 <code>getters</code> 映射到当前组件的 <code>computed</code> 计算属性</p>
+<h3 id="3、-vuex-的-getter-特性是什么？"><a href="#3、-vuex-的-getter-特性是什么？" class="headerlink" title="3、 vuex 的 getter 特性是什么？"></a>3、 vuex 的 getter 特性是什么？</h3><p>(1) getter 可以对 state 进行计算操作，它就是 store 的计算属性</p>
+<p>(2) 虽然在组件内也可以做计算属性，但是 getters 可以在多给件之间复用</p>
+<p>(3) 如果一个状态只在一个组件内使用，是可以不用 getters</p>
+<h3 id="4、vuex-的-mutation-特性是什么？"><a href="#4、vuex-的-mutation-特性是什么？" class="headerlink" title="4、vuex 的 mutation 特性是什么？"></a>4、vuex 的 mutation 特性是什么？</h3><p><code>action</code> 类似于 <code>muation</code>, 不同在于：<code>action</code> 提交的是 <code>mutation</code>,而不是直接变更状态</p>
+<p><code>action</code> 可以包含任意异步操作</p>
+<h3 id="5、vue-中-ajax-请求代码应该写在组件的methods中还是vuex-的action中？"><a href="#5、vue-中-ajax-请求代码应该写在组件的methods中还是vuex-的action中？" class="headerlink" title="5、vue 中 ajax 请求代码应该写在组件的methods中还是vuex 的action中？"></a>5、vue 中 ajax 请求代码应该写在组件的methods中还是vuex 的action中？</h3><p>如果请求来的数据不是要被其他组件公用，仅仅在请求的组件内使用，就不需要放入 vuex 的 state 里</p>
+<p>如果被其他地方复用，请将请求放入 action 里，方便复用，并包装成 promise 返回</p>
+<h3 id="6、不用-vuex-会带来什么问题？"><a href="#6、不用-vuex-会带来什么问题？" class="headerlink" title="6、不用 vuex 会带来什么问题？"></a>6、不用 vuex 会带来什么问题？</h3><p>可维护性会下降，你要修改数据，你得维护3个地方</p>
+<p>可读性下降，因为一个组件里的数据，你根本就看不出来是从哪里来的</p>
+<p>增加耦合，大量的上传派发，会让耦合性大大的增加，本来Vue用Component就是为了减少耦合，现在这么用，和组件化的初衷相背</p>
 
                 
             </div>
@@ -541,7 +542,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Sunnymeet.github.io/posts/2252498953/">https://Sunnymeet.github.io/posts/2252498953/</a>
+                    <a href="https://Sunnymeet.github.io/posts/2071915531/">https://Sunnymeet.github.io/posts/2071915531/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -579,8 +580,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Vue/">
-                                    <span class="chip bg-color">Vue</span>
+                                <a href="/tags/vuex/">
+                                    <span class="chip bg-color">vuex</span>
                                 </a>
                             
                         </div>
@@ -752,9 +753,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/posts/2071915531/">
                     <div class="card-image">
@@ -772,9 +774,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-05-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-12
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -783,6 +785,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -801,13 +804,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/3826350528/">
+                <a href="/posts/2252498953/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="HTTP状态码304和200">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="vue项目创建时出现的问题">
                         
-                        <span class="card-title">HTTP状态码304和200</span>
+                        <span class="card-title">vue项目创建时出现的问题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -818,7 +821,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-07
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-12
                             </span>
                         <span class="publish-author">
                             
@@ -831,8 +834,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/StatusCode/">
-                        <span class="chip bg-color">StatusCode</span>
+                    <a href="/tags/Vue/">
+                        <span class="chip bg-color">Vue</span>
                     </a>
                     
                 </div>
