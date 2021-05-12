@@ -468,7 +468,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-05-07
+                    2021-05-12
                 </div>
                 
 
@@ -502,8 +502,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="HTTP状态码304和200"><a href="#HTTP状态码304和200" class="headerlink" title="HTTP状态码304和200"></a>HTTP状态码304和200</h2><hr>
-<ul>
+                <h3 id="HTTP状态码304和200"><a href="#HTTP状态码304和200" class="headerlink" title="HTTP状态码304和200"></a>HTTP状态码304和200</h3><ul>
 <li>HTTP状态码是一种表示网页服务器响应状态的三位数字编码。</li>
 <li>状态码有几十种，其中首位字母数字为1-5. 根据这5个数字，状态码可以分为五类。</li>
 <li>1 开头的表示请求正在处理。</li>
@@ -512,16 +511,10 @@
 <li>4 开头表示请求错误。</li>
 <li>5 开头表示服务器错误。</li>
 </ul>
-<blockquote>
-<p>200状态码</p>
-</blockquote>
-<ul>
+<h4 id="200状态码"><a href="#200状态码" class="headerlink" title="200状态码"></a>200状态码</h4><ul>
 <li>在嗅探抓包中，常见的有两种200和304。这两种种状态码都关系到是否能获取重要信息。当客户第一次请求服务器资源，服务器成功返回资源，这时状态码为200. 所以，<strong>状态码为200的数据包往往包含用户从服务器获取的数据</strong>。</li>
 </ul>
-<blockquote>
-<p>304状态码</p>
-</blockquote>
-<ul>
+<h4 id="304状态码"><a href="#304状态码" class="headerlink" title="304状态码"></a>304状态码</h4><ul>
 <li>每个资源请求完成后，通常会被缓存在客户端，并会记录资源的有效时间和修改时间。当客户再次请求该资源，客户端首先从缓存中查找该资源。如果该资源存在，并且在有效期，则不请求服务器，就不会产生对应的请求数据包。</li>
 <li>如果不在有效期，客户端会请求服务器，重新获取。服务器会判断修改时间，如果没有修改过，就会返回状态码304，告诉客户端该资源仍然有效，客户端会直接使用缓存的资源。针对304的响应，渗透人员可以分析对应的请求包，获取资源路径。如果该资源不限制访问，就可以直接请求获取。否则，就需要进行Cookie劫持，进行获取。</li>
 </ul>
