@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Vuex面试题, HTML,CSS,JavaScript,Java,JQuery,React,Vue.js等">
+    <meta name="keywords" content="Flex布局, HTML,CSS,JavaScript,Java,JQuery,React,Vue.js等">
     <meta name="description" content="专注Java,分享生活,分享知识,热爱开源">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Vuex面试题 | 遇见晴天</title>
+    <title>Flex布局 | 遇见晴天</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -320,12 +320,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Vuex面试题</h1>
+                    <h1 class="description center-align post-title">Flex布局</h1>
                 </div>
             </div>
         </div>
@@ -445,8 +445,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Vuex/">
-                                <span class="chip bg-color">Vuex</span>
+                            <a href="/tags/Flex%E5%B8%83%E5%B1%80/">
+                                <span class="chip bg-color">Flex布局</span>
                             </a>
                         
                     </div>
@@ -461,28 +461,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-05-12
+                    2021-05-20
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-05-12
+                    2021-05-20
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    516
+                    1.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    5 分
                 </div>
                 
 
@@ -502,20 +502,99 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="1、vuex有哪几种属性？"><a href="#1、vuex有哪几种属性？" class="headerlink" title="1、vuex有哪几种属性？"></a>1、vuex有哪几种属性？</h3><p>有 5 种，分别是<code>state</code>、<code>getter</code>、<code>mutation</code>、<code>action</code>、<code>module</code><br><code>state</code> =&gt; 基本数据<br><code>getters</code> =&gt; 从基本数据派生的数据<br><code>mutations</code> =&gt; 提交更改数据的方法，同步！<br><code>action</code>s =&gt; 像一个装饰器，包裹mutations，使之可以异步。<br><code>modules</code> =&gt; 模块化Vuex</p>
-<h3 id="2、vuex-的-store-特性是什么？"><a href="#2、vuex-的-store-特性是什么？" class="headerlink" title="2、vuex 的 store 特性是什么？"></a>2、vuex 的 store 特性是什么？</h3><p>(1) vuex 就是一个仓库，仓库里放了很多对象。其中 state 就是数据源存放地，对应于一般 vue 对象里面的 data</p>
-<p>(2) state 里面存放的数据是响应式的，vue 组件从 <code>store</code> 读取数据，若是 store 中的数据发生改变，依赖这相数据的组件也会发生更新</p>
-<p>(3) 它通过<code> mapState</code> 把全局的<code> state</code> 和 <code>getters</code> 映射到当前组件的 <code>computed</code> 计算属性</p>
-<h3 id="3、-vuex-的-getter-特性是什么？"><a href="#3、-vuex-的-getter-特性是什么？" class="headerlink" title="3、 vuex 的 getter 特性是什么？"></a>3、 vuex 的 getter 特性是什么？</h3><p>(1) getter 可以对 state 进行计算操作，它就是 store 的计算属性</p>
-<p>(2) 虽然在组件内也可以做计算属性，但是 getters 可以在多给件之间复用</p>
-<p>(3) 如果一个状态只在一个组件内使用，是可以不用 getters</p>
-<h3 id="4、vuex-的-mutation-特性是什么？"><a href="#4、vuex-的-mutation-特性是什么？" class="headerlink" title="4、vuex 的 mutation 特性是什么？"></a>4、vuex 的 mutation 特性是什么？</h3><p><code>action</code> 类似于 <code>muation</code>, 不同在于：<code>action</code> 提交的是 <code>mutation</code>,而不是直接变更状态</p>
-<p><code>action</code> 可以包含任意异步操作</p>
-<h3 id="5、vue-中-ajax-请求代码应该写在组件的methods中还是vuex-的action中？"><a href="#5、vue-中-ajax-请求代码应该写在组件的methods中还是vuex-的action中？" class="headerlink" title="5、vue 中 ajax 请求代码应该写在组件的methods中还是vuex 的action中？"></a>5、vue 中 ajax 请求代码应该写在组件的methods中还是vuex 的action中？</h3><p>如果请求来的数据不是要被其他组件公用，仅仅在请求的组件内使用，就不需要放入 vuex 的 state 里</p>
-<p>如果被其他地方复用，请将请求放入 action 里，方便复用，并包装成 promise 返回</p>
-<h3 id="6、不用-vuex-会带来什么问题？"><a href="#6、不用-vuex-会带来什么问题？" class="headerlink" title="6、不用 vuex 会带来什么问题？"></a>6、不用 vuex 会带来什么问题？</h3><p>可维护性会下降，你要修改数据，你得维护3个地方</p>
-<p>可读性下降，因为一个组件里的数据，你根本就看不出来是从哪里来的</p>
-<p>增加耦合，大量的上传派发，会让耦合性大大的增加，本来Vue用Component就是为了减少耦合，现在这么用，和组件化的初衷相背</p>
+                <h1 id="移动web开发——flex布局"><a href="#移动web开发——flex布局" class="headerlink" title="移动web开发——flex布局"></a>移动web开发——flex布局</h1><h2 id="1-0传统布局和flex布局对比"><a href="#1-0传统布局和flex布局对比" class="headerlink" title="1.0传统布局和flex布局对比"></a>1.0传统布局和flex布局对比</h2><h3 id="1-1传统布局"><a href="#1-1传统布局" class="headerlink" title="1.1传统布局"></a>1.1传统布局</h3><ul>
+<li>兼容性好</li>
+<li>布局繁琐</li>
+<li>局限性，不能再移动端很好的布局</li>
+</ul>
+<h3 id="1-2-flex布局"><a href="#1-2-flex布局" class="headerlink" title="1.2 flex布局"></a>1.2 flex布局</h3><ul>
+<li>操作方便，布局极其简单，移动端使用比较广泛</li>
+<li>pc端浏览器支持情况比较差</li>
+<li>IE11或更低版本不支持flex或仅支持部分</li>
+</ul>
+<h3 id="1-3-建议"><a href="#1-3-建议" class="headerlink" title="1.3 建议"></a>1.3 建议</h3><ul>
+<li> 如果是pc端页面布局，还是采用传统方式</li>
+<li> 如果是移动端或者是不考虑兼容的pc则采用flex</li>
+</ul>
+<h2 id="2-0-flex布局原理"><a href="#2-0-flex布局原理" class="headerlink" title="2.0 flex布局原理"></a>2.0 flex布局原理</h2><ul>
+<li>flex 是 flexible Box 的缩写，意为”弹性布局”，用来为盒状模型提供最大的灵活性，任何一个容器都可以指定为 flex 布局。</li>
+<li>当我们为父盒子设为 flex 布局以后，子元素的 float、clear 和 vertical-align 属性将失效。</li>
+<li>flex布局又叫伸缩布局 、弹性布局 、伸缩盒布局 、弹性盒布局 </li>
+<li>采用 Flex 布局的元素，称为 Flex 容器（flex</li>
+</ul>
+<p>container），简称”容器”。它的所有子元素自动成为容器成员，称为 Flex 项目（flex<br>item），简称”项目”。</p>
+<p><strong>总结</strong>：就是通过给父盒子添加flex属性，来控制子盒子的位置和排列方式</p>
+<h2 id="3-0-父项常见属性"><a href="#3-0-父项常见属性" class="headerlink" title="3.0 父项常见属性"></a>3.0 父项常见属性</h2><ul>
+<li>flex-direction：设置主轴的方向</li>
+<li>justify-content：设置主轴上的子元素排列方式</li>
+<li>flex-wrap：设置子元素是否换行  </li>
+<li>align-content：设置侧轴上的子元素的排列方式（多行）</li>
+<li>align-items：设置侧轴上的子元素排列方式（单行）</li>
+<li>flex-flow：复合属性，相当于同时设置了 flex-direction 和 flex-wrap</li>
+</ul>
+<h3 id="3-1-flex-direction设置主轴的方向"><a href="#3-1-flex-direction设置主轴的方向" class="headerlink" title="3.1 flex-direction设置主轴的方向"></a>3.1 flex-direction设置主轴的方向</h3><ul>
+<li>在 flex 布局中，是分为主轴和侧轴两个方向，同样的叫法有 ： 行和列、x 轴和y 轴</li>
+<li>默认主轴方向就是 x 轴方向，水平向右</li>
+<li>默认侧轴方向就是 y 轴方向，水平向下</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/gTjAQU"><img src="https://z3.ax1x.com/2021/05/20/gTjAQU.jpg" alt="gTjAQU.jpg"></a></p>
+<ul>
+<li><p>注意： 主轴和侧轴是会变化的，就看 flex-direction 设置谁为主轴，剩下的就是侧轴。而我们的子元素是跟着主轴来排列的</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/gTjiWV"><img src="https://z3.ax1x.com/2021/05/20/gTjiWV.jpg" alt="gTjiWV.jpg"></a></p>
+</li>
+</ul>
+<h3 id="3-2-justify-content-设置主轴上的子元素排列方式"><a href="#3-2-justify-content-设置主轴上的子元素排列方式" class="headerlink" title="3.2 justify-content 设置主轴上的子元素排列方式"></a>3.2 justify-content 设置主轴上的子元素排列方式</h3><p><a target="_blank" rel="noopener" href="https://imgtu.com/i/gTXvLQ"><img src="https://z3.ax1x.com/2021/05/20/gTXvLQ.jpg"></a></p>
+<h3 id="3-3-flex-wrap设置是否换行"><a href="#3-3-flex-wrap设置是否换行" class="headerlink" title="3.3 flex-wrap设置是否换行"></a>3.3 flex-wrap设置是否换行</h3><ul>
+<li>默认情况下，项目都排在一条线（又称”轴线”）上。flex-wrap属性定义，flex布局中默认是不换行的。</li>
+<li>nowrap 不换行</li>
+<li>wrap 换行</li>
+</ul>
+<h3 id="3-4-align-items-设置侧轴上的子元素排列方式（单行-）"><a href="#3-4-align-items-设置侧轴上的子元素排列方式（单行-）" class="headerlink" title="3.4 align-items 设置侧轴上的子元素排列方式（单行 ）"></a>3.4 align-items 设置侧轴上的子元素排列方式（单行 ）</h3><ul>
+<li>该属性是控制子项在侧轴（默认是y轴）上的排列方式  在子项为单项（单行）的时候使用</li>
+<li>flex-start 从头部开始</li>
+<li>flex-end 从尾部开始</li>
+<li>center 居中显示</li>
+<li>stretch 拉伸</li>
+</ul>
+<h3 id="3-5-align-content-设置侧轴上的子元素的排列方式（多行）"><a href="#3-5-align-content-设置侧轴上的子元素的排列方式（多行）" class="headerlink" title="3.5 align-content  设置侧轴上的子元素的排列方式（多行）"></a>3.5 align-content  设置侧轴上的子元素的排列方式（多行）</h3><p>设置子项在侧轴上的排列方式 并且只能用于子项出现 换行 的情况（多行），在单行下是没有效果的。</p>
+<p><img src="https://z3.ax1x.com/2021/05/20/gTXVUI.jpg"></p>
+<h3 id="3-6-align-content-和align-items区别"><a href="#3-6-align-content-和align-items区别" class="headerlink" title="3.6 align-content 和align-items区别"></a>3.6 align-content 和align-items区别</h3><ul>
+<li>align-items  适用于单行情况下， 只有上对齐、下对齐、居中和 拉伸</li>
+<li>align-content适应于换行（多行）的情况下（单行情况下无效）， 可以设置 上对齐、下对齐、居中、拉伸以及平均分配剩余空间等属性值。 </li>
+<li>总结就是单行找align-items  多行找 align-content</li>
+</ul>
+<h3 id="3-7-flex-flow-属性是-flex-direction-和-flex-wrap-属性的复合属性"><a href="#3-7-flex-flow-属性是-flex-direction-和-flex-wrap-属性的复合属性" class="headerlink" title="3.7 flex-flow 属性是 flex-direction 和 flex-wrap 属性的复合属性"></a>3.7 flex-flow 属性是 flex-direction 和 flex-wrap 属性的复合属性</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flex-flow:row wrap;</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-0-flex布局子项常见属性"><a href="#4-0-flex布局子项常见属性" class="headerlink" title="4.0 flex布局子项常见属性"></a>4.0 flex布局子项常见属性</h2><ul>
+<li>flex子项目占的份数</li>
+<li>align-self控制子项自己在侧轴的排列方式</li>
+<li>order属性定义子项的排列顺序（前后顺序）</li>
+</ul>
+<h3 id="4-1-flex-属性"><a href="#4-1-flex-属性" class="headerlink" title="4.1  flex 属性"></a>4.1  flex 属性</h3><p>flex 属性定义子项目分配剩余空间，用flex来表示占多少份数。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.item &#123;</span><br><span class="line">    flex: &lt;number&gt;; /* 默认值 0 */</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="4-2-align-self控制子项自己在侧轴上的排列方式"><a href="#4-2-align-self控制子项自己在侧轴上的排列方式" class="headerlink" title="4.2 align-self控制子项自己在侧轴上的排列方式"></a>4.2 align-self控制子项自己在侧轴上的排列方式</h3><p>align-self 属性允许单个项目有与其他项目不一样的对齐方式，可覆盖 align-items 属性。</p>
+<p>默认值为 auto，表示继承父元素的 align-items 属性，如果没有父元素，则等同于 stretch。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">span:nth-child(2) &#123;</span><br><span class="line">      /* 设置自己在侧轴上的排列方式 */</span><br><span class="line">      align-self: flex-end;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="4-3-order-属性定义项目的排列顺序"><a href="#4-3-order-属性定义项目的排列顺序" class="headerlink" title="4.3 order 属性定义项目的排列顺序"></a>4.3 order 属性定义项目的排列顺序</h3><p>数值越小，排列越靠前，默认为0。</p>
+<p>注意：和 z-index 不一样。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.item &#123;</span><br><span class="line">    order: &lt;number&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-0-携程网首页案例制作"><a href="#5-0-携程网首页案例制作" class="headerlink" title="5.0 携程网首页案例制作"></a>5.0 携程网首页案例制作</h2><p>携程网链接：<a target="_blank" rel="noopener" href="http://m.ctrip.com/">http://m.ctrip.com</a></p>
+<p>1.技术选型</p>
+<p>方案：我们采取单独制作移动页面方案</p>
+<p>技术：布局采取flex布局</p>
+<p>2.搭建相关文件夹</p>
+<p><img src="https://z3.ax1x.com/2021/05/20/gTOjER.jpg"></p>
+<p>3.设置视口标签以及引入初始化样式</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;css/normalize.css&quot;&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;css/index.css&quot;&gt;</span><br></pre></td></tr></table></figure>
+
+<p>4.常用初始化样式</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  max-width: 540px;</span><br><span class="line">  min-width: 320px;</span><br><span class="line">  margin: 0 auto;</span><br><span class="line">  font: normal 14px/1.5 Tahoma,&quot;Lucida Grande&quot;,Verdana,&quot;Microsoft Yahei&quot;,STXihei,hei;</span><br><span class="line">  color: #000;</span><br><span class="line">  background: #f2f2f2;</span><br><span class="line">  overflow-x: hidden;</span><br><span class="line">  -webkit-tap-highlight-color: transparent;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>5.模块名字划分</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/gTOLDJ"><img src="https://z3.ax1x.com/2021/05/20/gTOLDJ.jpg"></a></p>
 
                 
             </div>
@@ -542,7 +621,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Sunnymeet.github.io/posts/2071915531/">https://Sunnymeet.github.io/posts/2071915531/</a>
+                    <a href="https://Sunnymeet.github.io/posts/2875753233/">https://Sunnymeet.github.io/posts/2875753233/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -580,8 +659,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Vuex/">
-                                    <span class="chip bg-color">Vuex</span>
+                                <a href="/tags/Flex%E5%B8%83%E5%B1%80/">
+                                    <span class="chip bg-color">Flex布局</span>
                                 </a>
                             
                         </div>
@@ -753,9 +832,56 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/posts/2875753233/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="Flex布局">
+                        
+                        <span class="card-title">Flex布局</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-20
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            遇见晴天
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Flex%E5%B8%83%E5%B1%80/">
+                        <span class="chip bg-color">Flex布局</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/posts/3045692676/">
                     <div class="card-image">
@@ -773,9 +899,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-05-13
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-13
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -789,51 +915,6 @@
                     
                     <a href="/tags/JavaScript/">
                         <span class="chip bg-color">JavaScript</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/posts/2252498953/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Vue项目创建时出现的问题">
-                        
-                        <span class="card-title">Vue项目创建时出现的问题</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-12
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            遇见晴天
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Vue/">
-                        <span class="chip bg-color">Vue</span>
                     </a>
                     
                 </div>
